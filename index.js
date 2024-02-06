@@ -2,14 +2,17 @@ var player1 = prompt("Welcome to my dice game. Enter your name Player 1");
 
 var player2 = prompt("Enter your name Player 2");
 
-if (Boolean(player1) && Boolean(player2) == " ") {
+if (player1.length == 0) {
     document.querySelector(".p1").textContent = "Player 1";
-    document.querySelector(".p2").textContent = "Player 2";
+    player1 = "Player 1";
 }
-
-document.querySelector(".p1").textContent = player1;
-
-document.querySelector(".p2").textContent = player2;
+else if (player2.length == 0) {
+    document.querySelector(".p2").textContent = "Player 2";
+    player2 = "Player 2";
+} else {
+    document.querySelector(".p1").textContent = player1;
+    document.querySelector(".p2").textContent = player2;
+}
 
 document.querySelector(".refreshBtn").addEventListener("click", rollDice);
 
