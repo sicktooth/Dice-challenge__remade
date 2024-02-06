@@ -15,7 +15,7 @@ if (player1 == "" && player2 == "" || player1 == null && player2 == null) {
 else {
     document.querySelector(".p1").textContent = player1;
     document.querySelector(".p2").textContent = player2;
-} // Renders the inputed data
+} // Renders the input data
 
 document.querySelector(".refreshBtn").addEventListener("click", rollDice);
 
