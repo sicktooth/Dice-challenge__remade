@@ -1,17 +1,21 @@
 var player1 = prompt("Welcome to my dice game. Enter your name Player 1");
+//Player 1's name
 
 var player2 = prompt("Enter your name Player 2");
+//Player 2's name
 
-if (player1.length == 0 && player2.length == 0) {
+if (player1 == "" && player2 == "" || player1 == null && player2 == null) {
     document.querySelector(".p1").textContent = "Player 1";
     player1 = "Player 1";
     
     document.querySelector(".p2").textContent = "Player 2";
     player2 = "Player 2";
-} else {
+} // Checks for empty names and renders Player 1 and 2
+
+else {
     document.querySelector(".p1").textContent = player1;
     document.querySelector(".p2").textContent = player2;
-}
+} // Renders the inputed data
 
 document.querySelector(".refreshBtn").addEventListener("click", rollDice);
 
