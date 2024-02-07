@@ -34,13 +34,13 @@ document.querySelector(".refreshBtn").addEventListener("click", rollDice); // ma
 function rollDice() {
     var randomNumber1 = Math.floor(Math.random() * 6) + 1; // outputs a random number from 1 - 6
 
-    var imageSource = "/images/dice" + randomNumber1 + ".png";
+    var imageSource = "images/dice" + randomNumber1 + ".png";
 
     var img1 = document.querySelectorAll("img")[0].setAttribute("src", imageSource);
 
     var randomNumber2 = Math.floor(Math.random() * 6) + 1; // outputs a random number from 1 - 6
 
-    var imageSource0 = "/images/dice" + randomNumber2 + ".png";
+    var imageSource0 = "images/dice" + randomNumber2 + ".png";
 
     var img2 = document.querySelectorAll("img")[1].setAttribute("src", imageSource0);
 
